@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday</title>
+<style>
+    body {
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        color: #333;
+    }
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        display: inline-block;
+        max-width: 400px;
+    }
+    h1 {
+        color: #e91e63;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background: #e91e63;
+        color: white;
+        cursor: pointer;
+    }
+    input {
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🎉 Joyeux Anniversaire Alaaae 🎉</h1>
+
+    <p>
+        Aujourd’hui n’est pas un jour comme les autres…  
+        c’est le jour où quelqu’un de spécial est né 💖
+    </p>
+
+    <p>
+        Alaaae, je voulais juste te dire que tu comptes beaucoup pour moi,  
+        et que ta présence rend tout plus beau.
+    </p>
+
+    <p>
+        J’espère que cette petite surprise te fera sourire 😊  
+    </p>
+
+    <p>💌 Petite question pour toi :</p>
+    
+    <p><b>Est-ce que ce cadeau t’a fait sourire ? 😄</b></p>
+
+    <input type="text" id="reponse" placeholder="Ta réponse ici...">
+    <br>
+    <button onclick="showMessage()">Valider</button>
+
+    <p id="resultat" style="margin-top:15px;"></p>
+
+    <p>
+        🎂 Profite bien de ta journée 🎂  
+    </p>
+
+    <p><b>De la part de quelqu’un qui tient à toi ❤️</b></p>
+</div>
+
+<script>
+function showMessage() {
+    let rep = document.getElementById("reponse").value;
+    let res = document.getElementById("resultat");
+
+    if(rep.trim() !== "") {
+        res.innerHTML = "Ta réponse m'a fait plaisir 💖😊";
+    } else {
+        res.innerHTML = "Hmmm… j’attends ta réponse 😏";
+    }
+}
+</script>
+
+</body>
+</html>
